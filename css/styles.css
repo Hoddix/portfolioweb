@@ -1,0 +1,63 @@
+html,body{
+	width: 100%;
+}
+
+.backgorund{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/back.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: -2;
+}
+header{
+
+}
+header h1{
+	color: white;
+	font-family: Sansation;
+	font-size: 10em;
+}
+header h3{
+	color: white;
+	font-family: Sansation;
+}
+section{
+	background-color: white;
+}
+footer{
+
+}
+
+
+/*ONE*/
+.into-office{
+	background-color: grey;
+	height: 350px;
+}
+.office-description{
+	background-color: red;
+	height: 350px;
+}
+
+/*Tamaño de los iconos*/
+.icono-3{
+	font-size: 5em;
+}
+
+
+
+
+/* SEPARACCION */
+.separacion{
+	height: 400px;
+}

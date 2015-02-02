@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Javier Cabello Ortega</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="backgorund"></div>
+	<div class="container-fluid">
+		<header class="row" id="header">
+			<div class="col-md-12" id="titulo">
+				<h1 class="text-center">&lttitle&gtI'm&lt/title&gt</h1>
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8 text-center">
+						<h3>&ltmeta name="author" content="Javier Cabello Ortega"&gt</h3>
+						<h3>&ltmeta name="description" content="Desarrollador de aplicaciones web"&gt</h3>
+						<h3>&ltmeta name="keywords" content="HTML5, CSS3, Java, PHP, JavaScript, Laravel Framework, jQuery"&gt</h3>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="row" id="section-one">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<h2 class="text-center">ONE</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<h3 class="text-center">Titulo1</h3>
+							<div class="row text-center">
+								<i class="glyphicon glyphicon-home icono-3"></i>
+							</div>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						</div>
+						<div class="col-md-4">
+							<h3 class="text-center">Titulo1</h3>
+							<div class="row text-center">
+								<i class="glyphicon glyphicon-send icono-3"></i>
+							</div>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						</div>
+						<div class="col-md-4">
+							<h3 class="text-center">Titulo1</h3>
+							<div class="row text-center">
+								<i class="glyphicon glyphicon-apple icono-3"></i>
+							</div>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 into-office"></div>
+					<div class="col-md-9 office-description"></div>
+				</div>
+				<div class="row">
+				</div>
+				
+			</div>		
+		</section>
+		<div class="row separacion"></div>
+		<section class="row" id="section-two">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<h2 class="text-center">TWO</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							
+						</div>
+						<div class="col-md-4">
+						
+						</div>
+						
+						<div class="col-md-4">
+
+						</div>
+					</div>
+					<div class="row"></div>
+				</div>
+			</div>		
+		</section>
+		<section class="row" id="section-three">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<h2 class="text-center">THREE</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							
+						</div>
+						<div class="col-md-4">
+						
+						</div>
+						
+						<div class="col-md-4">
+
+						</div>
+					</div>
+					<div class="row"></div>
+				</div>
+			</div>		
+		</section>
+		<section class="row" id="section-four">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<h2 class="text-center">FOUR</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							
+						</div>
+						<div class="col-md-4">
+						
+						</div>
+						
+						<div class="col-md-4">
+
+						</div>
+					</div>
+					<div class="row"></div>
+				</div>
+			</div>		
+		</section>
+		<footer class="row" id="footer">
+			<div class="col-md-12">
+
+			</div>		
+		</footer>
+	</div>
+
+	<!-- jQuery JavaScript -->
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+
+		var $height;
+		var $tituloH;
+		var $headerScroll;
+		var $sectionOneScroll, $sectionTwoScroll, $sectionThreeScroll, $sectionFourScroll;
+		var $footerScroll;
+		var header = true, sectionone = false, sectiontwo = false, sectionthree = false, sectionfour = false, footer = false;
+
+		$(document).ready(function(){
+			$height = $(window).height();
+			$tituloH = $('#titulo').height();
+			
+			$('header').height($height);
+			$('section').height($height);
+			$('footer').height($height);
+			$('header').height($height);
+			$('#titulo').css('top',($height/2)-($tituloH/2));
+
+			$headerScroll = $('#header').offset().top;
+			$sectionOneScroll = $('#section-one').offset().top;
+			$sectionTwoScroll = $('#section-two').offset().top;
+			$sectionThreeScroll = $('#section-three').offset().top;
+			$sectionFourScroll = $('#section-four').offset().top;
+			$footerScroll = $('#footer').offset().top;
+		});
+
+		//Firefox
+		$('html,body').bind('DOMMouseScroll', function(e){
+			if(e.originalEvent.detail > 0) {
+				//scroll down
+				if(header){
+					header = false;
+					$('html,body').animate({scrollTop: $sectionOneScroll}, 1000);
+				}
+				else if(sectionone){
+					sectionone = false;
+					$('html,body').animate({scrollTop: $sectionTwoScroll}, 1000);
+				}
+				else if(sectiontwo){
+					sectiontwo = false;
+					$('html,body').animate({scrollTop: $sectionThreeScroll}, 1000);
+				}
+				else if(sectionthree){
+					sectionthree = false;
+					$('html,body').animate({scrollTop: $sectionFourScroll}, 1000);
+				}
+				else if(sectionfour){
+					sectionfour = false;
+					$('html,body').animate({scrollTop: $footerScroll}, 1000);
+				}
+			}else {
+				//scroll up
+				if(footer){
+					footer = false;
+					$('html,body').animate({scrollTop: $sectionFourScroll}, 1000);
+				}
+				else if(sectionfour){
+					sectionfour = false;
+					$('html,body').animate({scrollTop: $sectionThreeScroll}, 1000);
+				}
+				else if(sectionthree){
+					sectionthree = false;
+					$('html,body').animate({scrollTop: $sectionTwoScroll}, 1000);
+				}
+				else if(sectiontwo){
+					sectiontwo = false;
+					$('html,body').animate({scrollTop: $sectionOneScroll}, 1000);
+				}				
+				else if(sectionone){
+					sectionone = false;
+					$('html,body').animate({scrollTop: $headerScroll}, 1000);
+				}
+			}
+			//prevent page fom scrolling
+			return false;
+		});
+
+		//IE, Opera, Safari
+		$('html,body').bind('mousewheel', function(e){
+			if(e.originalEvent.wheelDelta < 0) {
+				//scroll down
+				if(header){
+					header = false;
+					$('html,body').animate({scrollTop: $sectionOneScroll}, 1000);
+				}
+				else if(sectionone){
+					sectionone = false;
+					$('html,body').animate({scrollTop: $sectionTwoScroll}, 1000);
+				}
+				else if(sectiontwo){
+					sectiontwo = false;
+					$('html,body').animate({scrollTop: $sectionThreeScroll}, 1000);
+				}
+				else if(sectionthree){
+					sectionthree = false;
+					$('html,body').animate({scrollTop: $sectionFourScroll}, 1000);
+				}
+				else if(sectionfour){
+					sectionfour = false;
+					$('html,body').animate({scrollTop: $footerScroll}, 1000);
+				}
+			}else {
+				//scroll up
+				if(footer){
+					footer = false;
+					$('html,body').animate({scrollTop: $sectionFourScroll}, 1000);
+				}
+				else if(sectionfour){
+					sectionfour = false;
+					$('html,body').animate({scrollTop: $sectionThreeScroll}, 1000);
+				}
+				else if(sectionthree){
+					sectionthree = false;
+					$('html,body').animate({scrollTop: $sectionTwoScroll}, 1000);
+				}
+				else if(sectiontwo){
+					sectiontwo = false;
+					$('html,body').animate({scrollTop: $sectionOneScroll}, 1000);
+				}				
+				else if(sectionone){
+					sectionone = false;
+					$('html,body').animate({scrollTop: $headerScroll}, 1000);
+				}
+			}
+			//prevent page fom scrolling
+			return false;
+		});
+
+		$(window).scroll(function(event) {
+			if(getScroll() == $headerScroll){
+				header = true;
+			}
+			else if(getScroll() == $sectionOneScroll){
+				sectionone = true;
+			}
+			else if(getScroll() == $sectionTwoScroll){
+				sectiontwo = true;
+			}
+			else if(getScroll() == $sectionThreeScroll){
+				sectionthree = true;
+			}
+			else if(getScroll() == $sectionFourScroll){
+				sectionfour = true;
+			}
+			else if(getScroll() == $footerScroll){
+				footer = true;
+			}
+		});
+
+		function getScroll(){
+			var $scrollAhora = $(window).scrollTop();
+			return $scrollAhora;
+		}
+
+	</script>
+
+</body>
+</html>
